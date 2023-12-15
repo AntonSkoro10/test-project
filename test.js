@@ -48,18 +48,18 @@
 // console.log(checkStorage(200, 20));
 // console.log(checkStorage(200, 150));
 
-function checkPassword(password) {
-    const correctPassword = "jqueryismyjam";
+// function checkPassword(password) {
+//     const correctPassword = "jqueryismyjam";
 
-    if (password === correctPassword) {
-      return "Acces granted!";
-    } else {
-      return "Access denied, wrong password!";
-    }
-}
+//     if (password === correctPassword) {
+//       return "Acces granted!";
+//     } else {
+//       return "Access denied, wrong password!";
+//     }
+// }
 
-console.log(checkPassword("jqueryismyjam"));
-console.log(checkPassword("angul4r1sl1f3"));
+// console.log(checkPassword("jqueryismyjam"));
+// console.log(checkPassword("angul4r1sl1f3"));
 
 // function checkPassword(password) {
 //   const correctPassword = "jqueryismyjam";
@@ -75,4 +75,24 @@ console.log(checkPassword("angul4r1sl1f3"));
 // console.log(checkPassword("jqueryismyjam"));  // Повертає "Access granted"
 // console.log(checkPassword("angul4r1sl1f3"));  // Повертає "Access denied, wrong password!"
 // console.log(checkPassword("r3actsux"));        // Повертає "Access denied, wrong password!"
+
+// function getSubscriptionPrice(type) {
+//   switch (type) {
+//     case "starter":
+//       return 0;
+//     case "professional":
+//       return 20;
+//     case "organization":
+//       return 50;
+//     default:
+//       return "Invalid subcrition type!";
+//   }
+// }
+
+// console.log(getSubscriptionPrice("professional")); // повертає число 20
+// console.log(getSubscriptionPrice("organization")); // повертає число 50
+// console.log(getSubscriptionPrice("starter"));      // повертає число 0
+// console.log(getSubscriptionPrice("random"));       // повертає рядок "Invalid subscription type!"
+// console.log(getSubscriptionPrice("premium"));      // повертає рядок "Invalid subscription type!"
+
 
