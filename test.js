@@ -130,3 +130,13 @@
 // console.log(makeTransaction(10, 5000, 8000)); // "Insufficient funds!"
 // console.log(makeTransaction(8, 2000, 10000)); // "Insufficient funds!"
 // console.log(makeTransaction(10, 500, 5000)); // "You ordered 10 droids worth 5000 credits!"
+
+// TASK-2 //
+
+function formatMessage(message, maxLenght) {
+    if (message >= maxLenght) {
+        return message;
+    } else {
+        
+    }
+}
