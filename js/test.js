@@ -208,17 +208,60 @@
 
 // TASK-2 //
 
-function formatMessage(message, maxLenght) {
-    if (message.lenght <= maxLenght) {
-        return message;
-    } else {
-        return message.slice(0, maxLenght) + "...";
-    }
-}
+// function formatMessage(message, maxLenght) {
+//     if (message.lenght <= maxLenght) {
+//         return message;
+//     } else {
+//         return message.slice(0, maxLenght) + "...";
+//     }
+// }
  
-console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
-console.log(formatMessage("Curabitur ligula sapien", 23)); // "Curabitur ligula sapien"
-console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum facilisis..."
-console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum facilisis purus nec"
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
+// console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
+// console.log(formatMessage("Curabitur ligula sapien", 23)); // "Curabitur ligula sapien"
+// console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum facilisis..."
+// console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum facilisis purus nec"
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
+
+// function toCamelCase(str) {
+//     return str.split(/[-_]/).map((word, index) => {
+//         // Перетворення першого слова у верблюжу нотацію
+//         if (index === 0) {
+//             return word.toLowerCase();
+//         } else {
+//             // Перетворення наступних слів, якщо вони не порожні
+//             return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+//         }
+//     }).join('');
+// }
+
+// // Перевірка функції
+// console.log(toCamelCase("the-stealth-warrior")); // "theStealthWarrior"
+// console.log(toCamelCase("The_Stealth_Warrior")); // "TheStealthWarrior"
+// console.log(toCamelCase("The_Stealth-Warrior")); // "TheStealthWarrior"
+
+function zbruchPalaceHotel(number) {
+    let price;
+    let time;
+    switch (number) {
+        case 'люкс':
+            price = 30;
+            time = 24;
+            return `Ночівля у номері ${number} на ${time} години буде коштувати ${price}$ `;
+        case 'президентський':
+            price = 45;
+            time = 24;
+            return `Ночівля у номері ${number} на ${time} години буде коштувати ${price}$ `;
+        case 'стандарт':
+            price = 5;
+            time = 12;
+            return `Ночівля у номері ${number} на ${time} годин буде коштувати ${price}$ `;
+        default:
+            return "Такого номеру немає в наявності";
+}
+}
+
+console.log(zbruchPalaceHotel('люкс'));
+console.log(zbruchPalaceHotel('президентський'));
+console.log(zbruchPalaceHotel('стандарт'));
+console.log(zbruchPalaceHotel('luxury'));
