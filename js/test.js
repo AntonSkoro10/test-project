@@ -133,10 +133,92 @@
 
 // TASK-2 //
 
+// function formatMessage(message, maxLenght) {
+//     if (message >= maxLenght) {
+//         return message;
+//     } else {
+        
+//     }
+// }
+
+// function isNumberInRange(start, end, number) {
+//     return number >= start && end >= number;
+// }
+// console.log(isNumberInRange(10, 30, 17));
+// console.log(isNumberInRange(23, 25, 25));
+
+// function checkAcces(subType) {
+//     return subType === "pro" || subType === "vip";
+// }
+// console.log(checkAcces("pro"));
+// console.log(checkAcces("user"));
+// console.log(checkAcces("vip"));
+
+// function toggleModalVisbility(isVisible) {
+//     return !isVisible;
+// }
+
+// console.log(toggleModalVisbility(true));
+// console.log(toggleModalVisbility(false));
+
+// function getSubstring(string, lenght) {
+//     return string.slice(0, lenght);
+// }
+
+// console.log(getSubstring("Hello World!", 3));
+// console.log(getSubstring("Hello World!", 8));
+
+// function normalizeInput(input, to) {
+//     if (to === "upper") {
+//         return input.toUpperCase();
+//     } else if (to === "lower") {
+//         return input.toLowerCase();
+//     }
+// }
+   
+// console.log(normalizeInput("This ISN'T SpaM", "lower"));
+// console.log(normalizeInput("This ISN'T SpaM", "upper"));
+
+// const username = "Anton Skoromnyi"
+// console.log(username.includes("Anton"));
+// console.log(username.includes("Skoromnyi"));
+// console.log(username.includes("Alena"));
+// console.log(username.includes("Tymchuk"));
+
+// function checkForName(fullName, firstName) {
+//     return fullName.includes(firstName);
+// }
+
+// console.log(checkForName("Anton Skoromnyi", "Anton"));
+
+// const str = "Hello World!";
+// console.log(str.startsWith("Hello World!", "hello"));
+// console.log(str.endsWith("Hello World!", "world"));
+
+// function checkFileExtension(fileName, ext) {
+//     if (fileName.endsWith(ext)) {
+//         return "File extension matches";
+//     } else {
+//         return "File extension do not matches";
+//     }
+// }
+
+// console.log(checkFileExtension("styles.css", "css"));
+// console.log(checkFileExtension("hello.js!", "js"));
+
+// TASK-2 //
+
 function formatMessage(message, maxLenght) {
-    if (message >= maxLenght) {
+    if (message.lenght <= maxLenght) {
         return message;
     } else {
-        
+        return message.slice(0, maxLenght) + "...";
     }
 }
+ 
+console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
+console.log(formatMessage("Curabitur ligula sapien", 23)); // "Curabitur ligula sapien"
+console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum facilisis..."
+console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum facilisis purus nec"
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
