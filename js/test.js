@@ -240,28 +240,36 @@
 // console.log(toCamelCase("The_Stealth_Warrior")); // "TheStealthWarrior"
 // console.log(toCamelCase("The_Stealth-Warrior")); // "TheStealthWarrior"
 
-function zbruchPalaceHotel(number) {
-    let price;
-    let time;
-    switch (number) {
-        case 'люкс':
-            price = 30;
-            time = 24;
-            return `Ночівля у номері ${number} на ${time} години буде коштувати ${price}$ `;
-        case 'президентський':
-            price = 45;
-            time = 24;
-            return `Ночівля у номері ${number} на ${time} години буде коштувати ${price}$ `;
-        case 'стандарт':
-            price = 5;
-            time = 12;
-            return `Ночівля у номері ${number} на ${time} годин буде коштувати ${price}$ `;
-        default:
-            return "Такого номеру немає в наявності";
-}
-}
+// function zbruchPalaceHotel(number) {
+//     let price;
+//     let time;
+//     switch (number) {
+//         case 'люкс':
+//             price = 30;
+//             time = 24;
+//             return `Ночівля у номері ${number} на ${time} години буде коштувати ${price}$ `;
+//         case 'президентський':
+//             price = 45;
+//             time = 24;
+//             return `Ночівля у номері ${number} на ${time} години буде коштувати ${price}$ `;
+//         case 'стандарт':
+//             price = 5;
+//             time = 12;
+//             return `Ночівля у номері ${number} на ${time} годин буде коштувати ${price}$ `;
+//         default:
+//             return "Такого номеру немає в наявності";
+// }
+// }
 
-console.log(zbruchPalaceHotel('люкс'));
-console.log(zbruchPalaceHotel('президентський'));
-console.log(zbruchPalaceHotel('стандарт'));
-console.log(zbruchPalaceHotel('luxury'));
+// console.log(zbruchPalaceHotel('люкс'));
+// console.log(zbruchPalaceHotel('президентський'));
+// console.log(zbruchPalaceHotel('стандарт'));
+// console.log(zbruchPalaceHotel('luxury'));
+
+function calculateTotal(number) {
+    let number = 150;
+        while (number < 200) {
+        }
+    }
+
+console.log(calculateTotal);
