@@ -266,10 +266,96 @@
 // console.log(zbruchPalaceHotel('стандарт'));
 // console.log(zbruchPalaceHotel('luxury'));
 
-function calculateTotal(number) {
-    let number = 150;
-        while (number < 200) {
-        }
-    }
+// function calculateTotal(number) {
+//     while (number < 6) {
+//         let number = 3;
+//         number += 1+2+3;
+//     }
+// }
+// console.log(calculateTotal(3));
 
-console.log(calculateTotal);
+
+// let anton = 0;
+
+// while (anton < 10) {
+//     console.log(Anton )
+// }
+
+// function calculateTotal(number) {
+//     let total = 0;
+//     let i = 1;
+//     while (number >= i) {
+//         total += i;
+//         i += 1;
+//     }
+//     return total;
+// }
+//  console.log(calculateTotal(3));
+
+// function calculateTotal(number) {
+//   let total = 0;
+//   for (let i = 1; number >= i;  i ++ ) {
+//     total += i;
+//   }
+//   return total;
+// }
+
+// console.log(calculateTotal(21));
+
+// function calculateTotal(number) {
+//     let total = 0;
+//     for (let i = 4; number >= i; i ++) {
+//         total += i;
+//     }
+//     return total;
+// }
+
+// console.log(calculateTotal(24));
+
+// function calculateEvenTotal(number) {
+//     let total = 0;
+//     for (let i = 1; number >= i; ++i) {
+//         if (i % 2 == 0) {
+//             total += i;
+//         }
+//     }
+//     return total;
+// }
+
+// console.log(calculateEvenTotal(7));
+// console.log(calculateEvenTotal(3));
+// console.log(calculateEvenTotal(18));
+// console.log(calculateEvenTotal(27));
+
+// function findNumber(start, end, divisor) {
+//   let total = 0;
+//   for (let i = start; end => i; i++ ) {
+//     if (i % divisor == 0) {
+//       return i;
+//     }
+//   }
+// }
+// console.log(findNumber(2, 6, 5));
+// console.log(findNumber(11, 13, 12));
+// console.log(findNumber(8, 17, 3));
+
+// const fruits = ["apple", "pineapple", "banana"];
+// fruits[0] = "peach"
+// fruits[1] = "orange"
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+
+// function getOrderQuantity(order) {
+//     return order.length;
+// }
+ 
+// console.log(["apple", "banana", "pear"]);
+
+function getLastElementMeta(array) {
+    const lastIndex = array.length - 1;
+    const lasElement = array[lastIndex];
+    return [lastIndex, lasElement];
+}
+ 
+console.log(getLastElementMeta(["apple", "pear", "peach", "banana"]));
