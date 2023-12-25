@@ -352,10 +352,25 @@
  
 // console.log(["apple", "banana", "pear"]);
 
-function getLastElementMeta(array) {
-    const lastIndex = array.length - 1;
-    const lasElement = array[lastIndex];
-    return [lastIndex, lasElement];
-}
+// function getLastElementMeta(array) {
+//     const lastIndex = array.length - 1;
+//     const lasElement = array[lastIndex];
+//     return [lastIndex, lasElement];
+// }
  
-console.log(getLastElementMeta(["apple", "pear", "peach", "banana"]));
+// console.log(getLastElementMeta(["apple", "pear", "peach", "banana"]));
+
+// function getExtremeElements(array) {
+//     return [array[0], array[array.length - 1]];
+// }
+
+// console.log(getExtremeElements(["apple", "pear", "peach", "banana"]));
+
+function slugify(title) {
+    return title.toLowerCase();
+}
+
+console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
+console.log(slugify("English for developer")); // "english-for-developer"
+console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
