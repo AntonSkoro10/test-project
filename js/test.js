@@ -366,11 +366,82 @@
 
 // console.log(getExtremeElements(["apple", "pear", "peach", "banana"]));
 
+// function slugify(title) {
+//     return title.toLowerCase();
+    
+// }
+
+// console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
+// console.log(slugify("English for developer")); // "english-for-developer"
+// console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+// console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+
+// function getLength(array) {
+//     const string = array.join('')
+//     return string.length
+// }
+
+// console.log(getLength(["Mango", "hurries", "to", "the", "train"]));
+// console.log(getLength(["Anton", "Skoromnyi"]));
+
+// function calculatePrice(message, pricePerWord) {
+//     const words = message.split(' ');
+//     const totalPrice = words.length * pricePerWord;
+//     return totalPrice;
+// }
+
+// console.log(calculatePrice("JavaScript is in my blood", 10));
+// console.log(calculatePrice("Anton end Alena it`s love forever", 20));
+
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   // Розділити рядок на слова
+//   const words = message.split(' ');
+  
+//   // Знайти кількість слів у рядку та обчислити вартість гравірування
+//   const totalPrice = words.length * pricePerWord;
+  
+//   return totalPrice;
+// }
+
+// // Приклади використання функції
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10)); // повертає 50
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 20)); // повертає 100
+// console.log(calculateEngravingPrice("Web-development is creative work", 40)); // повертає 160
+// console.log(calculateEngravingPrice("Web-development is creative work", 20)); // повертає 80
+
+// console.log(calculatePrice("JavaScript is in my blood", 10));
+
+// function getIndexElement(array, value) {
+//     const elem = array.indexOf(value)
+//     return elem
+// }
+// console.log(getIndexElement(["Mango", "Poly", "Ajax"], "Poly"));
+
 function slugify(title) {
-    return title.toLowerCase();
+    const toLowerCasedTitle = title.toLowerCase()
+    const words = toLowerCasedTitle.split(' ')
+    const slug = words.join('-')
+    return slug
 }
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
 console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
 console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+
+function makeArray(firstArray, secondArray, maxLength) {
+    const allArray = firstArray.concat(secondArray)
+    if (allArray > maxLength) {
+        return allArray.slice(0, maxLength)
+    } else {
+        return allArray
+    }
+}
+
+console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
+console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
+console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); // ["Mango", "Ajax", "Chelsea"]
+console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Earth", "Jupiter"]
+console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
+console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
