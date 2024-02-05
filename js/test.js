@@ -738,42 +738,179 @@ const getUserNames = (users) => {
   return users.map(user => user.name);
 }
 
-console.log(
-  getUserNames([
-    {
-      name: "Moore Hensley",
-      email: "moorehensley@indexia.com",
-      balance: 2811
-    },
-    {
-      name: "Sharlene Bush",
-      email: "sharlenebush@tubesys.com",
-      balance: 3821
-    },
-    {
-      name: "Ross Vazquez",
-      email: "rossvazquez@xinware.com",
-      balance: 3793
-    },
-    {
-      name: "Elma Head",
-      email: "elmahead@omatom.com",
-      balance: 2278
-    },
-    {
-      name: "Carey Barr",
-      email: "careybarr@nurali.com",
-      balance: 3951
-    },
-    {
-      name: "Blackburn Dotson",
-      email: "blackburndotson@furnigeer.com",
-      balance: 1498
-    },
-    {
-      name: "Sheree Anthony",
-      email: "shereeanthony@kog.com",
-      balance: 2764
-    },
-  ])
-); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
+// task-1 //
+
+// console.log(
+//   getUserNames([
+//     {
+//       name: "Moore Hensley",
+//       email: "moorehensley@indexia.com",
+//       balance: 2811
+//     },
+//     {
+//       name: "Sharlene Bush",
+//       email: "sharlenebush@tubesys.com",
+//       balance: 3821
+//     },
+//     {
+//       name: "Ross Vazquez",
+//       email: "rossvazquez@xinware.com",
+//       balance: 3793
+//     },
+//     {
+//       name: "Elma Head",
+//       email: "elmahead@omatom.com",
+//       balance: 2278
+//     },
+//     {
+//       name: "Carey Barr",
+//       email: "careybarr@nurali.com",
+//       balance: 3951
+//     },
+//     {
+//       name: "Blackburn Dotson",
+//       email: "blackburndotson@furnigeer.com",
+//       balance: 1498
+//     },
+//     {
+//       name: "Sheree Anthony",
+//       email: "shereeanthony@kog.com",
+//       balance: 2764
+//     },
+//   ])
+// ); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
+
+// function registerGuest(name, callback) {
+//   console.log(`Registering ${name}`)
+//   callback(name)
+// }
+
+// registerGuest("Anton", function heet(name) {
+//   console.log(`Welcome, ${name}`)
+// })
+
+// registerGuest("Alena", function notify(name) {
+//   console.log(`Dear ${name}, your room will be ready in 30 minutes!`)
+// })
+
+// function registerHotel(name, type, nameHotel, callback) {
+//   console.log(`${name}, ваш номер ${type} у готелі ${nameHotel} заброньовано`)
+//   callback(name, type, nameHotel)
+// }
+
+// registerHotel("Антон", "люкс", "Zbruch Palace", function heet(name, type, nameHotel) {
+//   console.log(`Пане ${name}, ласкаво просимо у готель ${nameHotel}!`)
+// })
+
+
+// function calculateTotalPrice(orderedItems) {
+//   let total = 0
+
+//   orderedItems.forEach(function(item) {
+//    total += item
+//   });
+
+//   return total
+
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
+// function filterArray (numbers, value) {
+
+//   let array = []
+
+//   numbers.forEach( function(number) {
+//     if (number > value) {
+//       array.push(number)
+//     }
+//   });
+//   return array
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// const calculateTotalPrice = (quantity, pricePerDroid) => quantity * pricePerDroid;
+
+
+// console.log(calculateTotalPrice(10, 10));
+
+// const numbers = [1, 2, 3, 4, 5, 6]
+
+// numbers.forEach((number, name) => {
+//   console.log(`Name${name}, value ${number}`)
+// });
+
+// const calculateTotalPrice = orderedItems => {
+//   let total = 0
+
+//   orderedItems.forEach(item => {
+//     total += item
+//   });
+//   return total
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
+
+// const dirtyMultiply = (array, value) => {
+
+//   for (let i = 0; i < array.length; i += 1) {
+//     array[i] = array[i] * value
+
+//   }
+
+// };
+
+// const numbers = [1, 2, 3, 4, 5, 6]
+// dirtyMultiply(numbers, 4)
+
+// console.log(numbers)
+
+// const dirtyMultiply = (array, value) => {
+
+//   let newArray = []
+
+//   array.forEach(element => {
+//     newArray.push(element * value)
+//   });
+//   return newArray
+// }
+
+
+// const numbers = [1, 2, 3, 4, 5, 6]
+// const doubleNumbers = dirtyMultiply(numbers, 4)
+
+// console.log(doubleNumbers)
+
+// const changeEven = (numbers, value) => {
+//   let newArray = []
+
+//   numbers.forEach(even => {
+//     if (even % 2 === 0) {
+//       newArray.push(even + value)
+//     } else {
+//       newArray.push(even)
+//     }
+//   });
+// return newArray
+// }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10))
+
+// const planets = ["Земля", "Венера", "Сатурн", "Нептун"]
+
+// const planetsInUpperCase = planets.map(planet => planet.toUpperCase())
+// console.log(planetsInUpperCase)
+
+// const planetsinLowerCase = planets.map(planet => planet.toLowerCase())
+// console.log(planetsinLowerCase)
+
+const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+
+const planetsLengths = planets.map(planet => planet.length);
+console.log(planetsLengths)
