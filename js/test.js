@@ -734,9 +734,9 @@
 // multiply(1, 2, 3);
 // multiply(1, 2, 3, 4);
 
-const getUserNames = (users) => {
-  return users.map(user => user.name);
-}
+// const getUserName = (users) => {
+//   return users.map(user => user.name);
+// }
 
 // task-1 //
 
@@ -910,7 +910,500 @@ const getUserNames = (users) => {
 // const planetsinLowerCase = planets.map(planet => planet.toLowerCase())
 // console.log(planetsinLowerCase)
 
-const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
 
-const planetsLengths = planets.map(planet => planet.length);
-console.log(planetsLengths)
+// const planetsLengths = planets.map(planet => planet.length);
+// console.log(planetsLengths)
+
+// const LOW_SCORE = 50;
+// const HIGH_SCORE = 80;
+// const students = [
+//   { name: "Mango", score: 83 },
+//   { name: "Poly", score: 59 },
+//   { name: "Ajax", score: 37 },
+//   { name: "Kiwi", score: 94 },
+//   { name: "Houston", score: 64 },
+// ];
+
+// const best = students.filter(student => student.score >= HIGH_SCORE)
+// const worst = students.filter(student => student.score <= LOW_SCORE)
+
+// const avarage = students.filter(({ score }) => score >= LOW_SCORE && score <= HIGH_SCORE);
+
+// console.log(best)
+// console.log(worst)
+// console.log(avarage)
+
+// const getUsersWithAge = (users, minAge, maxAge) => users.filter(user => user.age >= minAge && user.age <= maxAge);
+// console.log(
+// [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//     age: 37
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//     age: 34
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//     age: 24
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//     age: 21
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//     age: 27
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//     age: 38
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//     age: 39
+//   }
+//   ]);
+
+
+
+// const getUserNames = (users) => users.flatMap(user => user.name)
+  
+//   console.log(
+//   getUserNames([
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     balance: 2811
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     balance: 3821
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     balance: 3793
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     balance: 2278
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     balance: 3951
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     balance: 1498
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     balance: 2764
+//   },
+// ])
+// ); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
+
+//
+
+// const isEveryUserActive = (users) => users.every(user => user.isActive)
+// console.log ([
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]);
+
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => {
+//   return total + player.playtime / player.gamesPlayed
+// }, 0);
+
+// console.log(totalAveragePlaytimePerGame);
+
+// const calculateTotalBalance = (users) => users.reduce((total, curr) => {
+//   return total + curr.balance;
+// }, 0);
+// console.log(
+// [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]);
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+
+// const ascendingReleaseDates = releaseDates.toSorted((a, b) => a - b);
+// console.log(ascendingReleaseDates)
+
+// const descendingReleaseDates = releaseDates.toSorted((a, b) => b - a);
+// console.log(descendingReleaseDates)
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+
+// const names = books.filter(book => book.rating > MIN_BOOK_RATING)
+//   .map(book => book.author)
+//   .toSorted((firstName, secondName) => firstName.author.localeCompare(secondName));
+
+// console.log(names);
+
+
+// function greet(str) {
+//   console.log(`${str}, ${this.username}, your room is ${this.room}!`);
+// }
+
+// const mango = {
+//   username: "Mango",
+// 	room: 27
+// };
+
+// const poly = {
+//   username: "Poly",
+// 	room: 191
+// };
+
+// greet.call("Welcome", this.mango)
+
+// function sayHello(greeting) {
+//   console.log(`${greeting}, ${this.name}!`);
+// }
+
+// const user = {
+//   name: "Alice"
+// };
+
+// const greet = sayHello.bind(user);
+
+// greet("Hello");
+
+// const customer = {
+//   firstName: "Anton",
+//   lastName: "Skoromnyi",
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   }
+// }
+
+// function makeMessage(callback) {
+
+//   const username = callback()
+//   console.log(`My name is ${username}`)
+// }
+
+// makeMessage(customer.getFullName.bind(customer))
+
+// const library = {
+// 	books: 1923,
+// 	logBookCount() {
+// 		console.log(this.books);
+// 	}
+// };
+
+// const showBooks = library.logBookCount.bind({ books: 724 });
+
+// showBooks();
+
+"use strict";
+
+// const library = {
+// 	books: 1923,
+// 	logBookCount() {
+// 		console.log(this.books);
+// 	}
+// };
+
+// function showBooks(callback) {
+// 	callback()
+// }
+
+// showBooks(library.logBookCount.bind(library))
+
+// const hotel = {
+// 	username: "Zbruch Palace",
+// 	showThis() {
+// 		const foo = () => {
+// 			console.log("this in foo:", this)
+// 		}
+
+// 		foo()
+// 		console.log("this in showThis:", this)
+// 	},
+// }
+
+// hotel.showThis()
+
+// const animal = {
+// 	legs: 4
+// }
+
+// const dog = Object.create(animal)
+// dog.name = "Mango"
+
+// console.log(dog)
+// console.log(dog.name)
+
+
+// class User {
+// 	name;
+// 	#email;
+
+// 	constructor({ name, email }) {
+// 		this.name = name
+// 		this.#email = email
+// 	}
+
+// 	getEmail() {
+// 		return this.#email
+// 	}
+
+// 	changeEmail() {
+// 		this.#email = newEmail
+// 	}
+// }
+
+// const mango = new User({
+// 	name: "Mango",
+// 	email: "mangoemail@1.com",
+// })
+
+// console.log(mango.getEmail())
+// mango.changeEmail("mangoemail@2.com")
+// console.log(mango.getEmail())
+
+class User {
+  email;
+
+  constructor(email) {
+    this.email = email;
+  }
+
+  get email() {
+    return this.email;
+  }
+
+  set email(newEmail) {
+    this.email = newEmail;
+  }
+}
+
+class Admin extends User {
+  static role = {
+    BASIC: "basic",
+    SUPERUSER: "superuser",
+	};
+	
+ acces
+
+constructor ({email, access}) {
+  super(email); 
+  this.access = access;
+	}
+}
+
+
+const mango = new Admin({
+  email: "mango@mail.com",
+  access: Admin.role.SUPERUSER,
+});
+
+console.log(mango.email); // "mango@mail.com"
+console.log(mango.access); // "superuser"
