@@ -1369,41 +1369,62 @@
 // mango.changeEmail("mangoemail@2.com")
 // console.log(mango.getEmail())
 
-class User {
-  email;
+// class User {
+//   email;
 
-  constructor(email) {
-    this.email = email;
-  }
+//   constructor(email) {
+//     this.email = email;
+//   }
 
-  get email() {
-    return this.email;
-  }
+//   get email() {
+//     return this.email;
+//   }
 
-  set email(newEmail) {
-    this.email = newEmail;
-  }
-}
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
 
-class Admin extends User {
-  static role = {
-    BASIC: "basic",
-    SUPERUSER: "superuser",
-	};
+// class Admin extends User {
+//   static role = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+// 	};
 	
- acces
+//  acces
 
-constructor ({email, access}) {
-  super(email); 
-  this.access = access;
-	}
-}
+// constructor ({email, access}) {
+//   super(email);
+//   this.access = access;
+// 	}
+// }
 
 
-const mango = new Admin({
-  email: "mango@mail.com",
-  access: Admin.role.SUPERUSER,
-});
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   access: Admin.role.SUPERUSER,
+// });
 
-console.log(mango.email); // "mango@mail.com"
-console.log(mango.access); // "superuser"
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.access); // "superuser"
+
+const addListenerBtn = document.querySelector('.js-add');
+const removeListener = document.querySelector('.js-remove');
+const btn = document.querySelector('.target-btn');
+
+
+  
+  const handleClick = () => {
+    console.log("click even listener callback")
+  };
+  
+   addListenerBtn.addEvenListener("click", () => {
+    btn.addEventListener("click", handleClick)
+    console.log("click event listener wass addat to btn")
+  }); 
+  
+  removeListener.addEvenListener("click", () => {
+    btn.addEventListener("click", handleClick)
+    console.log("click event listener wass removed from btn")
+  });
+

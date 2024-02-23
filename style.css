@@ -1,0 +1,16 @@
+.div-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    gap: 20px;
+}
+
+.first-btn {
+    background-color: lightsalmon;
+    display: flex;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #2e2f42;
+    font-family: 'Kode Mono', monospace;
+}
